@@ -16,7 +16,7 @@ def is_winner(player,bot):
         'S': 'P'
     }
     if player.pick == bot.pick:
-        print("It's a DRAW!")
+        result = "It's a DRAW!"
     elif win_conditions[player.pick] == bot.pick:
         player.score += 1
         result = f"{player.name} is the winner!"
